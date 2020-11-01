@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingTop="80dp"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_login"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Your Account"
+        android:paddingVertical="25dp"
+        android:textSize="24sp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/quicksand"/>
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_rounded"
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"
+        android:drawableStart="@drawable/custom_icon_email"
+        android:fontFamily="@font/quicksand_medium"
+        android:hint="Username"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="30dp"/>
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_rounded"
+        android:drawableStart="@drawable/custom_icon_password"
+        android:password="true"
+        android:fontFamily="@font/quicksand_medium"
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"
+        android:hint="Password"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="30dp"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded"
+        android:fontFamily="@font/quicksand"
+        android:enabled="false"
+        android:text="SIGN IN" />
+
+    <TextView
+        android:id="@+id/textForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password?"
+        android:fontFamily="@font/quicksand"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/createAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't you have an account?"
+        android:textSize="21sp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/quicksand"
+         />
+
+
+
+</LinearLayout>
